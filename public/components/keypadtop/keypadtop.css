@@ -1,0 +1,59 @@
+.keypad--top {
+  border-collapse: separate;
+  border-spacing: 4px;
+  border: none;
+  height: 103px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 312px;
+  width: 224px;
+  z-index: 11;
+}
+
+.keypad--top td {
+  background-image: radial-gradient(ellipse 68px 22px at center right, rgba(245, 245, 245, .9) 0%, rgba(245, 245, 245, .9) 35%, rgba(245, 245, 245, 0) 100%);
+  box-shadow: 0 0 5px 5px rgba(207, 207, 205, .5) inset;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 33.3333%;
+}
+
+.keypad--top td::before {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .9);
+  content: '';
+  display: block;
+  height: 15px;
+  left: 62%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -18px;
+  margin-left: -11px;
+  width: 22px;
+}
+
+.keypad--top td::after {
+  border-radius: 5px;
+  box-shadow: 0 0 8px 11px rgba(140, 140, 138, .9);
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -1px;
+  width: 1px;
+}
+
+.keypad--top__top-row td:first-of-type {
+  border-top-left-radius: 28px;
+}
+
+.keypad--top__top-row td:last-of-type {
+  border-top-right-radius: 28px;
+}

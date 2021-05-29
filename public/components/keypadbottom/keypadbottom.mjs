@@ -1,0 +1,85 @@
+const keypadbottomComponent = {
+  template: `
+  <table class="keypad--bottom">
+    <tr>
+      <td>
+        <div>
+          <span>1</span>
+          <span></span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>2</span>
+          <span>abc</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>def</span>
+          <span>3</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <span>4</span>
+          <span>ghi</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>5</span>
+          <span>jkl</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>mno</span>
+          <span>6</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <span>7</span>
+          <span>pqrs</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>8</span>
+          <span>tuv</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>wxyz</span>
+          <span>9</span>
+        </div>
+      </td>
+    </tr>
+    <tr class="keypad--bottom__last-row">
+      <td>
+        <div>
+          <span>*</span><span></span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>0</span><span></span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span>#</span><span></span>
+        </div>
+      </td>
+    </tr>
+  </table>
+`,
+};
+
+export { keypadbottomComponent };

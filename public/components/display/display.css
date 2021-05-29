@@ -1,0 +1,105 @@
+.interface-box__display {
+  background: #d9d9d7;
+  border-bottom-left-radius: 18px 50%;
+  border-bottom-right-radius: 18px 50%;
+  border-top-left-radius: 18px 50%;
+  border-top-right-radius: 18px 50%;
+  top: 112px;
+  align-items: center;
+  display: flex;
+  height: 199px;
+  justify-content: center;
+  left: 50%;
+  margin-left: -115px;
+  position: absolute;
+  width: 230px;
+  z-index: 12;
+}
+
+.interface-box__display__frame {
+  align-items: center;
+  border-top-left-radius: 50% 7px;
+  border-top-right-radius: 50% 7px;
+  border-bottom-left-radius: 50% 7px;
+  border-bottom-right-radius: 50% 7px;
+  display: flex;
+  justify-content: center;
+  background: #d9d9d7;
+  border-top: 1px #c5c3c4 solid;
+  border-bottom: 1px #c5c3c4 solid;
+  height: 176px;
+  width: 206px;
+}
+
+.interface-box__display__screen {
+  background: #97a884;
+  background-image: url('../../display1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 184px auto;
+  border-radius: 6px;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, .2) inset;
+  height: 152px;
+  position: relative;
+  width: 194px;
+}
+
+.interface-box__display__screen > header {
+  background: #97a884;
+  border-top-left-radius: 50% 4px;
+  border-top-right-radius: 50% 4px;
+  box-shadow:
+    0 0 2px 3px rgba(0, 0, 0, .2) inset
+  ;
+  height: 4px;
+  margin-top: -4px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 0;
+}
+
+.interface-box__display__screen > footer {
+  background: #97a884;
+  border-bottom-left-radius: 50% 4px;
+  border-bottom-right-radius: 50% 4px;
+  box-shadow:
+    0 0 2px 3px rgba(0, 0, 0, .2) inset
+  ;
+  height: 4px;
+  margin-bottom: -4px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 0;
+}
+
+.interface-box__display__screen::before {
+  background: #79866a;
+  border-bottom-left-radius: 5px 50%;
+  border-top-left-radius: 5px 50%;
+  bottom: 5px;
+  content: '';
+  display: block;
+  left: 0;
+  margin-left: -5px;
+  position: absolute;
+  top: 5px;
+  width: 5px;
+}
+
+.interface-box__display__screen::after {
+  background: #79866a;
+  border-bottom-right-radius: 5px 50%;
+  border-top-right-radius: 5px 50%;
+  bottom: 5px;
+  content: '';
+  display: block;
+  right: 0;
+  margin-right: -5px;
+  position: absolute;
+  top: 5px;
+  width: 5px;
+}
