@@ -3,79 +3,79 @@ const keypadbottomComponent = {
   <table class="keypad--bottom">
     <tr>
       <td>
-        <div>
+        <button>
           <span>1</span>
           <span></span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>2</span>
           <span>abc</span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>def</span>
           <span>3</span>
-        </div>
+        </button>
       </td>
     </tr>
     <tr>
       <td>
-        <div>
+        <button>
           <span>4</span>
           <span>ghi</span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>5</span>
           <span>jkl</span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>mno</span>
           <span>6</span>
-        </div>
+        </button>
       </td>
     </tr>
     <tr>
       <td>
-        <div>
+        <button>
           <span>7</span>
           <span>pqrs</span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>8</span>
           <span>tuv</span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>wxyz</span>
           <span>9</span>
-        </div>
+        </button>
       </td>
     </tr>
     <tr class="keypad--bottom__last-row">
       <td>
-        <div>
+        <button>
           <span>*</span><span></span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>0</span><span></span>
-        </div>
+        </button>
       </td>
       <td>
-        <div>
+        <button>
           <span>#</span><span></span>
-        </div>
+        </button>
       </td>
     </tr>
   </table>

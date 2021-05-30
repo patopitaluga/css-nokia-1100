@@ -13,7 +13,7 @@
 }
 
 .keypad--top td {
-  background-image: radial-gradient(ellipse 68px 22px at center right, rgba(245, 245, 245, .9) 0%, rgba(245, 245, 245, .9) 35%, rgba(245, 245, 245, 0) 100%);
+  background-image: radial-gradient(ellipse 68px 100% at center right, rgba(245, 245, 245, .9) 0%, rgba(245, 245, 245, .9) 35%, rgba(245, 245, 245, 0) 100%);
   box-shadow: 0 0 5px 5px rgba(207, 207, 205, .5) inset;
   overflow: hidden;
   position: relative;
@@ -24,7 +24,7 @@
 
 .keypad--top td::before {
   border-radius: 5px;
-  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .9);
+  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .7);
   content: '';
   display: block;
   height: 15px;
@@ -38,7 +38,7 @@
 
 .keypad--top td::after {
   border-radius: 5px;
-  box-shadow: 0 0 8px 11px rgba(140, 140, 138, .9);
+  box-shadow: 0 0 8px 11px rgba(140, 140, 138, .7);
   content: '';
   display: block;
   height: 2px;
@@ -48,6 +48,33 @@
   margin-left: -6px;
   margin-top: -1px;
   width: 1px;
+}
+
+.keypad--top td button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.keypad--top td button::before {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .5);
+  content: '';
+  display: block;
+  height: 15px;
+  left: 60%;
+  position: absolute;
+  top: 0;
+  margin-left: -11px;
+  margin-top: -21px;
+  width: 22px;
 }
 
 .keypad--top__top-row td:first-of-type {

@@ -62,7 +62,11 @@
       </div>
       <div id="base__curve-right-bottom">
       </div>
-      <interface>
+      <interface
+        :vp-status="vdStatus"
+        @navup="mtdNavUp"
+        @navdown="mtdNavDown"
+      >
       </interface>
       <interface :vp-shadow="true">
       </interface>
