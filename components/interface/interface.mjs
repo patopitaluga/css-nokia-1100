@@ -13,6 +13,10 @@ const interfaceComponent = {
       type: Boolean,
       default: false,
     },
+    vpStatus: {
+      type: Number,
+      default: 0,
+    },
   },
   template: `
   <div
@@ -23,7 +27,12 @@ const interfaceComponent = {
   >
     <header>
     </header>
-    <div class="interface-box__bg interface-box__bg--top">
+    <div
+      class="interface-box__bg interface-box__bg--top"
+      style="display: flex; align-items: center; justify-content: center;"
+    >
+      <div class="interface-box__speaker">
+      </div>
     </div>
     <div class="interface-box__bg interface-box__bg--curve-left-top">
     </div>
@@ -37,9 +46,16 @@ const interfaceComponent = {
     </div>
     <div class="interface-box__bg interface-box__bg--curve-right-bottom">
     </div>
-    <display v-if="!vpShadow">
+    <display
+      v-if="!vpShadow"
+      :vp-status="vpStatus"
+    >
     </display>
-    <keypadtop v-if="!vpShadow">
+    <keypadtop
+      v-if="!vpShadow"
+      @navup="$emit('navup')"
+      @navdown="$emit('navdown')"
+    >
     </keypadtop>
     <keypadbottom v-if="!vpShadow">
     </keypadbottom>

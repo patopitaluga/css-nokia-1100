@@ -21,20 +21,46 @@
   width: 33.3333%;
 }
 
-.keypad--bottom td div {
+.keypad--bottom td button {
   align-items: center;
+  background-color: transparent;
   background-image: radial-gradient(ellipse 68px 22px at center right, rgba(245, 245, 245, .9) 0%, rgba(245, 245, 245, .9) 35%, rgba(245, 245, 245, 0) 100%);
+  border: 0;
   box-shadow: 0 0 5px 5px rgba(207, 207, 205, .5) inset;
+  cursor: pointer;
   display: flex; /* useful to align numbers to the left and letters to the right */
   justify-content: center;
   height: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
+
+.keypad--bottom td button::before {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .5);
+  content: '';
+  display: block;
+  height: 15px;
+  left: 60%;
+  position: absolute;
+  top: 0;
+  margin-left: -11px;
+  margin-top: -21px;
+  width: 22px;
+}
+
+.keypad--bottom td button:active {
+  background-image: radial-gradient(ellipse 68px 22px at center right, rgba(245, 245, 245, .4) 0%, rgba(245, 245, 245, .9) 35%, rgba(245, 245, 245, 0) 100%);
+}
+.keypad--bottom td button:active::before {
+  display: none;
+}
+
 
 .keypad--bottom td::before {
   border-radius: 5px;
-  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .9);
+  box-shadow: 0 0 5px 8px rgba(140, 140, 138, .8);
   content: '';
   display: block;
   height: 15px;
@@ -48,7 +74,7 @@
 
 .keypad--bottom td::after {
   border-radius: 5px;
-  box-shadow: 0 0 8px 11px rgba(140, 140, 138, .9);
+  box-shadow: 0 0 8px 11px rgba(140, 140, 138, .8);
   content: '';
   display: block;
   height: 2px;
