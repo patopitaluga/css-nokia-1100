@@ -18,7 +18,7 @@ const statusList = {
 const Nokia1100 = {
   data: function() {
     return {
-      vdStatus: 2,
+      vdStatus: statusList.INTRO,
     };
   },
   methods: {
